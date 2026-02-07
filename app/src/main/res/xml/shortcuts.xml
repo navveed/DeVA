@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="wake_up_deva"
+        android:enabled="true"
+        android:icon="@drawable/ic_mic"
+        android:shortcutShortLabel="@string/shortcut_wake_up_short"
+        android:shortcutLongLabel="@string/shortcut_wake_up_long">
+        <intent
+            android:action="com.deva.voice.wake_up_deva"
+            android:targetPackage="com.deva.voice"
+            android:targetClass="com.deva.voice.MainActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>
+
+

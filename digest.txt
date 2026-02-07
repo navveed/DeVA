@@ -1,0 +1,268 @@
+Directory structure:
+└── font/
+    ├── noto_serif_hebrew_condensed.xml
+    ├── noto_serif_hebrew_condensed_bold.ttf
+    ├── noto_serif_hebrew_condensed_regular.ttf
+    ├── notoserifhebrew_black.ttf
+    ├── notoserifhebrew_bold.ttf
+    ├── notoserifhebrew_condensed_black.ttf
+    ├── notoserifhebrew_condensed_extrabold.ttf
+    ├── notoserifhebrew_condensed_extralight.ttf
+    ├── notoserifhebrew_condensed_light.ttf
+    ├── notoserifhebrew_condensed_medium.ttf
+    ├── notoserifhebrew_condensed_semibold.ttf
+    ├── notoserifhebrew_condensed_thin.ttf
+    ├── notoserifhebrew_extrabold.ttf
+    ├── notoserifhebrew_extracondensed_black.ttf
+    ├── notoserifhebrew_extracondensed_bold.ttf
+    ├── notoserifhebrew_extracondensed_extrabold.ttf
+    ├── notoserifhebrew_extracondensed_extralight.ttf
+    ├── notoserifhebrew_extracondensed_light.ttf
+    ├── notoserifhebrew_extracondensed_medium.ttf
+    ├── notoserifhebrew_extracondensed_regular.ttf
+    ├── notoserifhebrew_extracondensed_semibold.ttf
+    ├── notoserifhebrew_extracondensed_thin.ttf
+    ├── notoserifhebrew_extralight.ttf
+    ├── notoserifhebrew_light.ttf
+    ├── notoserifhebrew_medium.ttf
+    ├── notoserifhebrew_regular.ttf
+    ├── notoserifhebrew_semibold.ttf
+    ├── notoserifhebrew_semicondensed_black.ttf
+    ├── notoserifhebrew_semicondensed_bold.ttf
+    ├── notoserifhebrew_semicondensed_extrabold.ttf
+    ├── notoserifhebrew_semicondensed_extralight.ttf
+    ├── notoserifhebrew_semicondensed_light.ttf
+    ├── notoserifhebrew_semicondensed_medium.ttf
+    ├── notoserifhebrew_semicondensed_regular.ttf
+    ├── notoserifhebrew_semicondensed_semibold.ttf
+    ├── notoserifhebrew_semicondensed_thin.ttf
+    └── notoserifhebrew_thin.ttf
+
+================================================
+FILE: noto_serif_hebrew_condensed.xml
+================================================
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font app:font="@font/noto_serif_hebrew_condensed_regular" app:fontWeight="400" />
+    <font app:font="@font/noto_serif_hebrew_condensed_bold" app:fontWeight="700" />
+</font-family>
+
+
+
+
+
+================================================
+FILE: noto_serif_hebrew_condensed_bold.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: noto_serif_hebrew_condensed_regular.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_black.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_bold.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_condensed_black.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_condensed_extrabold.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_condensed_extralight.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_condensed_light.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_condensed_medium.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_condensed_semibold.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_condensed_thin.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_extrabold.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_extracondensed_black.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_extracondensed_bold.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_extracondensed_extrabold.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_extracondensed_extralight.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_extracondensed_light.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_extracondensed_medium.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_extracondensed_regular.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_extracondensed_semibold.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_extracondensed_thin.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_extralight.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_light.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_medium.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_regular.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_semibold.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_semicondensed_black.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_semicondensed_bold.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_semicondensed_extrabold.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_semicondensed_extralight.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_semicondensed_light.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_semicondensed_medium.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_semicondensed_regular.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_semicondensed_semibold.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_semicondensed_thin.ttf
+================================================
+[Non-text file]
+
+
+================================================
+FILE: notoserifhebrew_thin.ttf
+================================================
+[Non-text file]
+

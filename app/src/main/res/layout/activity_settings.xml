@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_solid"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+
+        tools:context=".SettingsActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/settings"
+                android:paddingTop="50dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/oxanium"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/batteryOptimizationHelpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/deva_not_working"
+            android:textColor="@color/accent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voice &amp; Speech"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/playfair_display"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/select_default_tts_voice"
+                android:textColor="#888888"
+                android:textSize="14sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="8dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selection_window_background" />
+
+                <NumberPicker
+                    android:id="@+id/ttsVoicePicker"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/oxanium"
+                    android:layout_height="match_parent"
+                    android:theme="@style/AppTheme.NumberPicker" />
+
+            </FrameLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchShowThoughts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Show Agent Thoughts"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/oxanium"
+                app:thumbTint="@color/accent"
+                app:trackTint="#555555" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Display the agent's internal reasoning process on screen."
+                android:textColor="#888888"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/viewTaskLogsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/view_task_logs"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable 'Hey DeVA!'"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/playfair_display"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/get_your_free_picovoice_api_key_you_can_paste_it_here"
+                android:textColor="#888888"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textGetPicovoiceKeyLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/oxanium"
+                android:visibility="gone"
+                android:text="@string/get_your_free_accesskey_from_the_picovoice_console"
+                android:textColor="@color/accent"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/editWakeWordKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oxanium"
+
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Paste your key here"
+
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="#CECECE"
+                android:textColorHint="#888888" />
+
+
+
+            <TextView
+                android:id="@+id/wakeWordButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/enable_wake_word"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:background="@drawable/rounded_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/playfair_display"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/oxanium"
+                android:enabled="false"
+                android:background="@drawable/rounded_background"
+                android:hint="Your name"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textColor="#CECECE"
+                android:textColorHint="#888888" />
+
+            <EditText
+                android:id="@+id/editUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_background"
+                android:hint="Your email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:enabled="false"
+                android:textColor="#CECECE"
+                android:textColorHint="#888888" />
+
+            <TextView
+                android:id="@+id/textProfileDisclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="This email will not be verified or stored by us. Please enter an accurate email so we don’t have to spend money to onboard you. We treat different emails as different users."
+                android:textColor="#888888"
+                android:textSize="12sp" />
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonSaveProfile"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:background="@drawable/btn_with_border"-->
+<!--                android:text="Save Profile"-->
+<!--                android:textColor="@android:color/white" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/permissionsInfoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/playfair_display"
+            android:padding="8dp"
+            android:text="@string/why_permissions_needed"
+            android:textColor="@color/accent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+            <!-- Sign-out button - HIDDEN for college project (login bypassed) -->
+            <Button
+                android:id="@+id/buttonSignOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                android:background="@drawable/btn_with_border"
+                android:text="@string/sign_out"
+                android:textColor="@android:color/white" />
+            <TextView
+              android:id="@+id/appVersionText"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="8dp"
+              android:textColor="#888888"
+              android:textSize="12sp"
+              tools:text="Version 1.2.3" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+

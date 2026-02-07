@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- All Permissions from your app -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <!--    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/deva_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/deva_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Blurr"
+        tools:targetApi="31">
+
+        <!-- Your Activities -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <activity
+            android:name=".ChatActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr" />
+        <activity
+            android:name=".DialogueActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr" />
+        <activity
+            android:name=".OnboardingPermissionsActivity"
+            android:exported="false"
+            android:label="onboarding"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr" />
+        <activity
+            android:name=".PermissionsActivity"
+            android:exported="false"
+            android:label="@string/permissions_explained_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr" />
+        <activity
+            android:name=".MemoriesActivity"
+            android:exported="false"
+            android:label="My Memories"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr" />
+        <activity
+            android:name=".PrivacyActivity"
+            android:exported="false"
+            android:label="How DeVA Remembers"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr" />
+        <activity
+            android:name=".RoleRequestActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr" />
+
+        <activity
+            android:name=".AssistEntryActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".triggers.ui.TriggersActivity"
+            android:exported="false"
+            android:label="Triggers"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr" />
+        <activity
+            android:name=".triggers.ui.CreateTriggerActivity"
+            android:exported="false"
+            android:label="Create Trigger"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".triggers.ui.ChooseTriggerTypeActivity"
+            android:exported="false"
+            android:label="Choose Trigger Type"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr" />
+        <activity
+            android:name=".ProPurchaseActivity"
+            android:exported="false"
+            android:label="Upgrade to Pro"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr" />
+        <activity
+            android:name=".MomentsActivity"
+            android:exported="false"
+            android:label="Moments"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Blurr" />
+
+
+        <!-- Your Other Services -->
+        <service
+            android:name=".ScreenInteractionService"
+            android:exported="false"
+            android:label="@string/accessibility_service_label"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!--        <service-->
+        <!--            android:name=".ContentModerationService"-->
+        <!--            android:exported="false"-->
+        <!--            android:foregroundServiceType="dataSync" />-->
+
+        <!--        <service-->
+        <!--            android:name=".services.AgentTaskService"-->
+        <!--            android:exported="false"-->
+        <!--            android:foregroundServiceType="connectedDevice" />-->
+
+        <service
+            android:name=".v2.AgentService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse" />
+
+        <service
+            android:name=".triggers.TriggerMonitoringService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="specialUse" />
+
+        <service
+            android:name=".services.ScreenCaptureService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
+
+        <service android:name=".services.VisionOverlayService" />
+
+        <service
+            android:name=".services.EnhancedWakeWordService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
+
+        <service
+            android:name=".ConversationalAgentService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
+
+        <service
+            android:name=".services.FloatingDeVAButtonService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".triggers.DeVANotificationListenerService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <!-- Your Widget Provider -->
+        <receiver
+            android:name=".DeVAWidgetProvider"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/deva_widget_info" />
+        </receiver>
+
+        <!-- Central receiver for all app triggers -->
+        <receiver
+            android:name=".triggers.TriggerReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blurr.voice.action.EXECUTE_TASK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Receiver to reschedule alarms on device reboot -->
+        <receiver
+            android:name=".triggers.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".TaskLogsListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TaskLogDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
+

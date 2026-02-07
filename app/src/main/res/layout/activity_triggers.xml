@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_solid"
+    android:fitsSystemWindows="true"
+    tools:context=".triggers.ui.TriggersActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Your Triggers"
+        android:fontFamily="@font/playfair_display"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/trigger_options_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <CheckBox
+            android:id="@+id/enable_triggers_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Triggers"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/triggers_not_working_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/triggers_not_working_for_you"
+            android:textColor="@color/accent"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/triggersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/trigger_options_container"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        tools:listitem="@layout/item_trigger" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/addTriggerFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="Add Trigger"
+        app:icon="@drawable/ic_add"
+        android:fontFamily="@font/oxanium"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/button_blue"
+        android:contentDescription="Add new trigger" />
+
+</RelativeLayout>
+
+
+
